@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    background-color: #E8E9EB; /* Light background */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Default font */
+}
+
+/* Import Stylish Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: #2a2b2a; /* Dark background for navbar */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute items across the screen */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Shadow effect */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #E8E9EB;
+    text-decoration: none;
+    font-size: 1.75em; /* Adjusted font size */
+}
+
+.navbar-brand img {
+    width: 50px; /* Adjusted size of logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: #E8E9EB;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ff0035; /* Highlight color */
+    color: #fff;
+}
+
+.nav-select {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #2a2b2a;
+    color: #E8E9EB;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-select:hover {
+    background-color: #ff0035; /* Highlight color */
+    color: #fff;
+}
+
+/* Header Styles */
+.hero {
+    background-color: #2a2b2a;
+    color: #E8E9EB;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Shadow effect */
+}
+
+.hero-title {
+    font-size: 4em; /* Large font size */
+    font-weight: bold;
+    color: #E8E9EB; /* Light color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Grey shadow for depth */
+    font-family: 'Roboto', sans-serif; /* Roboto font */
+    text-align: center; /* Center align the text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-holder {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.about-logo {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2a2b2a;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.description h2:hover {
+    color: #ff0035; /* Highlight color */
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #2a2b2a;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.description p:hover {
+    color: #ff0035; /* Highlight color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2a2b2a;
+    color: #E8E9EB;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

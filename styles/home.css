@@ -1,0 +1,366 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #e9e9eb; /* Soft gray background */
+    background-image: url(../images/HOME/HOMEPLANEXERBG.jpg);
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    color: #ff0035;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand:hover {
+    color: #d10029;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #2a2b2a;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0035;
+}
+
+/* Custom select list styles */
+.nav-select {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2a2b2a;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-select:hover {
+    border-color: #ff0035;
+    background-color: #f8f9fa;
+}
+
+.nav-select option {
+    font-weight: bold;
+}
+
+/* Circular Image Holder */
+.profile-image-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-image-holder img {
+    border-radius: 50%;
+    width: 120px; /* Adjusted size */
+    height: 120px; /* Adjusted size */
+    object-fit: cover;
+}
+
+/* Main Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Dashboard Item Styles */
+.dashboard-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-item img {
+    width: 100%;
+    height: auto; /* Adjusted to maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-item:hover img {
+    transform: scale(1.05);
+}
+
+.dashboard-item h2 {
+    margin: 10px 0;
+}
+
+.data-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-button {
+    background-color: #ff0035;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.data-button:hover {
+    background-color: #d10029;
+    transform: scale(1.05);
+}
+
+#bmr-display, #bmi-display, #calorie-display {
+    font-size: 1.5em;
+    color: #2a2b2a;
+    margin-top: 10px;
+}
+
+.workout-button {
+    background-color: #ff0035;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px; /* Add margin-bottom to create space between button and image */
+}
+
+.workout-button:hover {
+    background-color: #d10029;
+    transform: scale(1.05);
+}
+
+/* Tooltip Styles */
+.physique-description {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.dashboard-item:hover .physique-description {
+    display: block;
+    top: 10px; /* Adjust positioning */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Plan Workout Div Adjustments */
+.plan-workout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-workout img {
+    width: 100%; /* Ensure image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Set a max-width to control image size */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Tooltip Styles */
+.physique-level {
+    position: relative;
+    cursor: pointer;
+}
+
+.physique-level::after {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 1000;
+    bottom: 125%; /* Position above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.physique-level:hover::after {
+    display: block;
+    opacity: 1;
+}
+
+/* Dashboard Item Styles */
+.dashboard-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-item:hover img {
+    transform: scale(1.05);
+}
+
+.dashboard-item h2 {
+    margin: 10px 0;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Logo Holder Styles */
+/* Logo Holder Styles */
+/* Logo Holder Styles */
+.logo-holder {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: 400px; /* Double the original height */
+    width: 400px; /* Double the original width */
+    align-self: center; /* Center vertically */
+    justify-self: center; /* Center horizontally */
+    margin-top: -50px; /* Adjust as needed to position */
+    margin-left: 400px; /* Significantly move logo to the right */
+}
+
+.logo-holder img {
+    max-height: 100%; /* Ensure image fits within the container */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+
+/* Plan Workout Button and Image Spacing */
+.dashboard-item img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-item:hover img {
+    transform: scale(1.05);
+}
+
+.dashboard-item .workout-button {
+    margin-bottom: 20px;
+}
+
+/* Additional Animations and Hover Effects */
+.data-button, .workout-button {
+    background-color: #ff0035;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.data-button:hover, .workout-button:hover {
+    background-color: #d10029;
+    transform: scale(1.05);
+}
+
+#bmr-display, #bmi-display, #calorie-display {
+    font-size: 1.5em;
+    color: #2a2b2a;
+    margin-top: 10px;
+}
+
+/* Add the existing CSS code from your styles/home.css file here */
+
+.data-button {
+    background-color: #ff0035;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+.data-button:hover {
+    background-color: #d10029;
+    transform: scale(1.05);
+}

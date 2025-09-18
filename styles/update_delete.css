@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e9eb;
+    color: #2a2b2a;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2a2b2a;
+    color: #ff0035;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+}
+
+h1 {
+    color: #ff0035;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-holder {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-holder img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2a2b2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #ff0035;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #e8e9eb;
+    text-decoration: none;
+}
+
+.nav-select {
+    background-color: #2a2b2a;
+    color: #e8e9eb;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.data-button {
+    background-color: #ff0035;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+.data-button:hover {
+    background-color: #d10029;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2a2b2a;
+    color: #e8e9eb;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

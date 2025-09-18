@@ -1,0 +1,47 @@
+<!--
+Assignment 2,
+Team: Devansh Shah(041132970), Armaan Singh(041130409), Rudra Tailor(041140251)
+File Name: error.html
+Subject: CST8285
+Topic: Fitness Tracker Website
+Description: Error page for login issues.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Pumpin.Fit</title>
+    <link rel="stylesheet" href="../styles/error.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="error-message">
+            <h1>Error</h1>
+            <p id="message"></p>
+            <a href="login.html" class="back-link">Go Back</a>
+        </div>
+    </div>
+
+    <script>
+        // Get the error parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+
+        // Set the error message based on the parameter
+        const messageElement = document.getElementById('message');
+        switch (error) {
+            case 'invalid_password':
+                messageElement.textContent = 'Invalid password. Please try again.';
+                break;
+            case 'user_not_found':
+                messageElement.textContent = 'No such user found. Please check your username.';
+                break;
+            default:
+                messageElement.textContent = 'An unknown error occurred. Please try again later.';
+        }
+    </script>
+</body>
+</html>

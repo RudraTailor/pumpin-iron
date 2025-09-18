@@ -1,0 +1,77 @@
+<!--
+Assignment 2,
+Team: Devansh Shah(041132970), Armaan Singh(041130409), Rudra Tailor(041140251)
+File Name: about.html
+Subject: CST8285
+Topic: Fitness Tracker Website
+Description: About Us page for Pumpin.Fit website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../styles/about.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/LOGOCS1.png" alt="Logo" class="logo">
+                <span>Pumpin.fit</span>
+            </a>
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../server/home.php">Home</a></li>
+                <li><a class="nav-link" href="team.html">Teams</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li>
+                    <select class="nav-select" onchange="location = this.value;">
+                        <option value="#" selected>Workouts</option>
+                        <option value="../server/plannedworkout.php">Planned Workouts</option>
+                        <option value="personalizedworkout.html">Personalized Workouts</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <p class="hero-title">About Pumpin.fit</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="image-holder">
+            <img src="../images/LOGOCS3.png" alt="Pumpin.fit Logo" class="about-logo">
+        </div>
+        <div class="description">
+            <h2>Welcome to Pumpin.fit!</h2>
+            <p>Pumpin.fit is your ultimate fitness tracker and workout planner. Our application allows you to track your workouts, set fitness goals, and stay motivated. Whether you’re looking for planned workouts or personalized fitness plans, Pumpin.fit provides a comprehensive solution to help you achieve your fitness objectives. Explore our features, customize your workouts, and get started on your path to a healthier, stronger you.</p>
+            <h2>Features Include</h2>
+            <ul>
+                <li><strong>BMI (Body Mass Index) Calculation:</strong> Accurately calculates your BMI based on your height and weight, helping you understand your body composition and overall health status.</li>
+                <li><strong>BMR (Basal Metabolic Rate) Calculation:</strong> Determines your BMR to estimate the number of calories your body needs at rest to maintain essential functions, such as breathing and maintaining body temperature.</li>
+                <li><strong>Calorie Intake Tracking:</strong> Monitors your daily calorie intake and provides personalized recommendations based on your activity level, dietary goals, and metabolic needs.</li>
+                <li><strong>User-Specific Data Retrieval:</strong> Fetches and displays customized data for each user, including historical records and trends to help track progress over time.</li>
+                <li><strong>Responsive Design:</strong> Ensures a seamless experience across various devices with a design that adjusts to different screen sizes and orientations.</li>
+                <li><strong>Interactive Interface:</strong> Offers an intuitive and user-friendly interface with real-time updates and dynamic visualizations of your health metrics.</li>
+                <li><strong>Personalized Recommendations:</strong> Provides tailored advice and suggestions based on your BMI, BMR, and daily calorie consumption to help you achieve your fitness and health goals.</li>
+                <li><strong>Data Security:</strong> Implements robust security measures to protect user data and privacy, ensuring a safe and confidential experience.</li>
+                <li><strong>Integration with Other Tools:</strong> Compatible with additional fitness tools and apps for a comprehensive health management experience.</li>
+                <li><strong>Educational Resources:</strong> Includes informational content and tips on how to interpret BMI, BMR, and calorie data, as well as general wellness advice.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Pumpin.Fit. All rights reserved. by Wolves - Armaan, Devansh and Rudra
+    </footer>
+</body>
+</html>

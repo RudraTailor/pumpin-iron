@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Record</title>
+    <link rel="stylesheet" href="../styles/update_delete.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pumpin.fit</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/LOGOCS1.png" alt="Logo" class="logo"> <!-- Placeholder for logo image -->
+                Pumpin.fit
+            </a>
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../server/home.php">Home</a></li>
+                <li><a class="nav-link" href="team.html">Teams</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li>
+                    <select class="nav-select" onchange="location = this.value;">
+                        <option value="#" selected>Workouts</option>
+                        <option value="../server/plannedworkout.php">Planned Workouts</option>
+                        <option value="personalizedworkout.html">Personalized Workouts</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="image-holder">
+            <img src="../images/LOGOCS1.png" alt="Image"> <!-- Placeholder for your image -->
+        </div>
+        <h1>Update Your Record</h1>
+        <form id="updateForm" action="../server/update.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <div id="usernameError" class="error-message"></div>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <div id="passwordError" class="error-message"></div>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            <div id="ageError" class="error-message"></div>
+            
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required><br>
+            <div id="weightError" class="error-message"></div>
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required><br>
+            <div id="heightError" class="error-message"></div>
+            
+            <label for="lifestyle">Lifestyle:</label>
+            <select id="lifestyle" name="lifestyle" required>
+                <option value="Sedentary">Sedentary</option>
+                <option value="Lightly active">Lightly active</option>
+                <option value="Moderately active">Moderately active</option>
+                <option value="Very active">Very active</option>
+                <option value="Extra active">Extra active</option>
+            </select><br>
+            <div id="lifestyleError" class="error-message"></div>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+            <div id="genderError" class="error-message"></div>
+            
+            <label for="blood_group">Blood Group:</label>
+            <select id="blood_group" name="blood_group" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br>
+            <div id="bloodGroupError" class="error-message"></div>
+            
+            <button type="submit" class="data-button">Update Record</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Pumpin.Fit. All rights reserved.
+    </footer>
+</body>
+</html>

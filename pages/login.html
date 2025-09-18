@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Section -->
+    <div class="background">
+        <div class="form-wrapper">
+            <!-- Header Section -->
+            <div class="header">Pumpin.Fit</div>
+            <div class="title">Welcome Back!</div>
+            
+            <!-- Form Container Section -->
+            <div class="form-container">
+                <form id="loginForm" action="../server/login.php" method="post" onsubmit="return validateLoginForm()">
+                    <!-- Field Group for Username -->
+                    <div class="field-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <span id="loginUsernameError" class="error-message"></span>
+                    </div>
+                    
+                    <!-- Field Group for Password -->
+                    <div class="field-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span id="loginPasswordError" class="error-message"></span>
+                    </div>
+                    
+                    <!-- Login Button -->
+                    <button type="submit" class="login-button">Log In</button>
+                </form>
+            </div>
+
+            <!-- Footer Section -->
+            <footer>
+                &copy; 2024 Pumpin.Fit. All rights reserved. by Wolves - Armaan, Devansh and Rudra
+            </footer>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../scripts/script.js" defer></script>
+</body>
+</html>

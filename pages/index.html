@@ -1,0 +1,73 @@
+<!--
+Assignment 2,
+Team: Devansh Shah(041132970), Armaan Singh(041130409), Rudra Tailor(041140251)
+File Name: index.html
+Subject: CST8285
+Topic: Fitness Tracker Website
+Description: Main landing page for Pumpin.Fit website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="../images/LOGOCS1.png" alt="Logo" class="logo"> <!-- Logo image -->
+            <span>Pumpin.fit</span>
+        </a>
+        <ul class="navbar-nav">
+            <li><a class="nav-link" href="login.html">Log in</a></li>
+            <li><a class="nav-link" href="../server/home.php">Home</a></li>
+            <li><a class="nav-link" href="team.html">Teams</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <p class="hero-title">PumpinIron.fit</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="main-content">
+            <div class="main-image"></div>
+            <div class="sidebar">
+                <h2>FITNESS TRACKER</h2>
+                <div class="button-container">
+                    <div class="button" onclick="window.location.href='login.html'">LOG IN!</div>
+                    <div class="connector"></div>
+                    <div class="button" onclick="window.location.href='register.html'">SIGN UP!</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hydrate Reminder Section -->
+        <div class="hydrate">
+            <p>DON'T FORGET TO HYDRATE!</p>
+        </div>
+
+        <!-- Footer Image Section -->
+        <div class="footer">
+            <div class="footer-item"><img src="../images/INDEXCOMPONENTS/HomeRW1.png" alt="Footer Image 1"></div>
+            <div class="footer-item"><img src="../images/INDEXCOMPONENTS/HomeRW2.png" alt="Footer Image 2"></div>
+            <div class="footer-item"><img src="../images/INDEXCOMPONENTS/HomeRW3.png" alt="Footer Image 3"></div>
+            <div class="footer-item"><img src="../images/INDEXCOMPONENTS/HomeRW4.png" alt="Footer Image 4"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Pumpin.Fit. All rights reserved. by Wolves - Armaan, Devansh and Rudra
+    </footer>
+</body>
+</html>

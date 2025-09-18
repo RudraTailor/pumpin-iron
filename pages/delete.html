@@ -1,0 +1,70 @@
+<!--
+Assignment 2,
+Team: Devansh Shah(041132970), Armaan Singh(041130409), Rudra Tailor(041140251)
+File Name: delete.html
+Subject: CST8285
+Topic: Fitness Tracker Website
+Description: Delete Record page for Pumpin.Fit website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Record</title>
+    <link rel="stylesheet" href="../styles/update_delete.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pumpin.fit</h1>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/LOGOCS1.png" alt="Logo"> <!-- Placeholder for logo image -->
+                Pumpin.fit
+            </a>
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../server/home.php">Home</a></li>
+                <li><a class="nav-link" href="team.html">Teams</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li>
+                    <select class="nav-select" onchange="location = this.value;">
+                        <option value="#" selected>Workouts</option>
+                        <option value="../server/plannedworkout.php">Planned Workouts</option>
+                        <option value="personalizedworkout.html">Personalized Workouts</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="image-holder">
+            <img src="../images/LOGOCS1.png" alt="Image"> <!-- Placeholder for your image -->
+        </div>
+        <h1>Delete Your Record</h1>
+        <form action="../server/delete.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Delete Record</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pumpin.fit. All rights reserved.</p>
+    </footer>
+</body>
+</html>

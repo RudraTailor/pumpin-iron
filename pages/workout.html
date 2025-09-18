@@ -1,0 +1,63 @@
+<!--
+Assignment 2,
+Team: Devansh Shah(041132970), Armaan Singh(041130409), Rudra Tailor(041140251)
+File Name: workout.html
+Subject: CST8285
+Topic: Fitness Tracker Website
+Description: Workout page for Pumpin.Fit website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" href="../styles/workout.css">
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/LOGOCS1.png" alt="Logo" class="logo"> <!-- Logo image -->
+                <span>Pumpin.fit</span>
+            </a>
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="../server/home.php">Home</a></li>
+                <li><a class="nav-link" href="team.html">Teams</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li>
+                    <select class="nav-select" onchange="location = this.value;">
+                        <option value="#" selected>Workouts</option>
+                        <option value="../server/plannedworkout.php">Planned Workouts</option>
+                        <option value="personalizedworkout.html">Personalized Workouts</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <header class="hero">
+        <p class="hero-title">Explore Your Workouts</p>
+    </header>
+
+    <div class="main-content">
+        <div class="image-holder">
+            <img class="image-holder" src="../images/INDEXCOMPONENTS/HomeSISU.jpg" alt="Workout Image"> <!-- Main image -->
+        </div>
+        <div class="navigation-buttons">
+            <a class="nav-button" href="../server/plannedworkout.php">Planned Workout</a>
+            <a class="nav-button" href="personalizedworkout.html">Personalized Workout</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; Wolves@2024 - Armaan, Devansh & Rudra - All Rights Reserved
+    </footer>
+</body>
+</html>
