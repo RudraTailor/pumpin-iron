@@ -1,6 +1,6 @@
 #PUMPIN-IRON.FIT
 
-<img width="1080" height="1080" alt="LOGOCS1" src="https://github.com/user-attachments/assets/031013d8-f92a-4aac-8f9c-1624b50c57a2" />
+<img width="100" height="100" alt="LOGOCS1" src="https://github.com/user-attachments/assets/031013d8-f92a-4aac-8f9c-1624b50c57a2" />
 
 
 A academic project web application for tracking fitness activities, designed with a focus on **user experience, database management, and responsive design**.
