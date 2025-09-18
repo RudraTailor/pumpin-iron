@@ -7,6 +7,12 @@ A academic project web application for tracking fitness activities, designed wit
 
 ---
 
+## Screenshots / Wireframes
+
+![WireFrame](https://github.com/user-attachments/assets/e8ade5fc-ff02-40e8-a509-95415a37892d)
+
+---
+
 ## Features
 
 * **User Registration & Login:** Secure authentication system.
@@ -14,13 +20,6 @@ A academic project web application for tracking fitness activities, designed wit
 * **Exercise Tracking:** Users can log and view their workouts.
 * **Dashboard:** Displays user stats and activity history in an intuitive layout.
 * **Wireframes & UI:** Designed wireframes for seamless navigation and **user-centered design** principles.
-
----
-
-
-## Screenshots / Wireframes
-
-![WireFrame](https://github.com/user-attachments/assets/e8ade5fc-ff02-40e8-a509-95415a37892d)
 
 ---
 
